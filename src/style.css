@@ -1,0 +1,34 @@
+body {
+  font-family: "Playfair Display", serif;
+}
+h1 {
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+#container {
+  max-width: 500px;
+  margin: 45px auto;
+  padding: 15px;
+}
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+}
+.btn,
+.search-form {
+  margin-bottom: 10px;
+}
+.details-city {
+  padding: 10px 0;
+}
+.current-temp {
+  font-size: 40px;
+}
+footer {
+  font-size: 12px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  border-top: 1px solid grey;
+  opacity: 0.8;
+}
