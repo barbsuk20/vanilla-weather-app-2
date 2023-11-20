@@ -12,6 +12,7 @@ h5 {
   margin-bottom: 15px;
 }
 #container {
+  display: flex;
   max-width: 500px;
   margin: 45px auto;
   padding: 15px;
@@ -27,13 +28,24 @@ h5 {
 .details-city {
   padding: 10px 0;
 }
-.current-temp {
+.temperature-city-data {
+  display: flex;
+  justify-content: space-between;
+}
+#current-temp {
   font-size: 40px;
 }
+#unit-fahr,
+#unit-celsius,
+#division {
+  margin: 25px 0 0 5px;
+}
+
 footer {
   font-size: 12px;
   padding: 10px 0 0 0;
   text-align: center;
   border-top: 1px solid grey;
   opacity: 0.8;
+  margin: 0 auto;
 }
