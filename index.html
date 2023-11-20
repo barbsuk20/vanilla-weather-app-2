@@ -20,31 +20,36 @@
   </head>
   <body>
     <div id="container" class="card">
-      <div class="weather-data">
-        <div class="city-name">
-          <h1>London</h1>
-          <form>
-            <input
-              type="search"
-              placeholder="Enter a city..."
-              required
-              class="search-form"
-            />
-            <br />
-            <input type="submit" value="Search" class="btn btn-dark" />
-          </form>
-        </div>
-        <div class="details-city">
-          <div class="temperature-city-data">
-            <span class="current-temp">12</span>
-            <span class="units">°C | °F</span>
+      <div class="card-body">
+        <div class="weather-data">
+          <div class="name">
+            <h1 id="city">London</h1>
+            <h5 id="country">
+              United Kingdom of Great Britain and Northern Ireland
+            </h5>
+            <form class="search-form" id="search-form">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                required
+                id="search-form-input"
+              />
+              <br />
+              <input type="submit" value="Search" class="btn btn-dark" />
+            </form>
           </div>
-          <div class="humidity-city-data">Humidity: 30%</div>
-          <div class="wind-city-data">Wind: 5km/hr</div>
+          <div class="details-city">
+            <div class="temperature-city-data">
+              <span class="current-temp">12</span>
+              <span class="units">°C | °F</span>
+            </div>
+            <div class="humidity-city-data">Humidity: 30%</div>
+            <div class="wind-city-data">Wind: 5km/hr</div>
+          </div>
         </div>
+        <footer>Coded by Barbara Moya</footer>
       </div>
-      <footer>Coded by Barbara Moya</footer>
     </div>
   </body>
-  <script></script>
+  <script src="src/index.js"></script>
 </html>

@@ -4,6 +4,11 @@ body {
 h1 {
   font-style: italic;
   font-size: 40px;
+  margin: 0 auto;
+}
+h5 {
+  font-style: italic;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 #container {
@@ -17,7 +22,7 @@ h1 {
 }
 .btn,
 .search-form {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 .details-city {
   padding: 10px 0;
