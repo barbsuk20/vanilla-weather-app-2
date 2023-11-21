@@ -54,6 +54,21 @@ h5 {
   margin: 25px 0 0 5px;
 }
 
+.weather-forcast {
+  text-align: center;
+}
+.weather-forcast-date {
+  opacity: 0.8;
+}
+
+.max-temp {
+  font-size: 16px;
+}
+.min-temp {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
 footer {
   font-size: 12px;
   padding: 10px 0 0 0;
