@@ -1,16 +1,6 @@
 body {
   font-family: "Playfair Display", serif;
 }
-h1 {
-  font-style: italic;
-  font-size: 40px;
-  margin: 0 auto;
-}
-h5 {
-  font-style: italic;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
 #container {
   display: flex;
   max-width: 600px;
@@ -18,6 +8,22 @@ h5 {
   padding: 15px;
   box-sizing: unset;
 }
+
+h1 {
+  font-style: italic;
+  font-size: 40px;
+  margin: 0 auto;
+}
+#current-time {
+  font-style: normal;
+  font-size: 14px;
+}
+h5 {
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
 .weather-data {
   display: flex;
   justify-content: space-evenly;
@@ -27,15 +33,20 @@ h5 {
   margin: 10px 0;
 }
 .details-city {
-  padding: 10px 30px;
+  padding: 0 30px;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 .temperature-city-data {
   display: flex;
-  justify-content: space-between;
+}
+.weather-icon {
+  display: block;
+  width: 88px;
+  height: 88px;
 }
 #current-temp {
-  font-size: 40px;
+  font-size: 50px;
 }
 #unit-fahr,
 #unit-celsius,
