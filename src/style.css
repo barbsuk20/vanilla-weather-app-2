@@ -8,25 +8,27 @@ h1 {
 }
 h5 {
   font-style: italic;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 15px;
 }
 #container {
   display: flex;
-  max-width: 500px;
+  max-width: 600px;
   margin: 45px auto;
   padding: 15px;
+  box-sizing: unset;
 }
 .weather-data {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .btn,
 .search-form {
   margin: 10px 0;
 }
 .details-city {
-  padding: 10px 0;
+  padding: 10px 30px;
+  margin-left: 30px;
 }
 .temperature-city-data {
   display: flex;
