@@ -54,6 +54,12 @@ h5 {
   margin: 25px 0 0 5px;
 }
 
+#unit-fahr:hover,
+#unit-celsius:hover {
+  color: #6898de;
+  transition: all 200ms ease-in-out;
+}
+
 .weather-forcast {
   text-align: center;
 }
