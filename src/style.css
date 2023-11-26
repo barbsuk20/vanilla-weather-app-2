@@ -3,7 +3,7 @@ body {
 }
 #container {
   display: flex;
-  max-width: 600px;
+  max-width: 650px;
   margin: 45px auto;
   padding: 15px;
   box-sizing: unset;
@@ -21,7 +21,7 @@ h1 {
 h5 {
   font-style: italic;
   font-size: 15px;
-  margin-bottom: 15px;
+  margin: 10px 0;
 }
 
 .weather-data {
@@ -60,19 +60,37 @@ h5 {
   transition: all 200ms ease-in-out;
 }
 
-.weather-forcast {
-  text-align: center;
-}
-.weather-forcast-date {
-  opacity: 0.8;
+.weather-forecast {
+  margin: 20px 0 0 25px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.max-temp {
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
+.weather-forecast-temperatures {
+  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.weather-forecast-icon {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  text-align: center;
+}
+
 .min-temp {
-  opacity: 0.5;
-  font-size: 14px;
+  padding: 0 10px;
+  color: rgba(39, 33, 66, 0.4);
 }
 
 footer {
