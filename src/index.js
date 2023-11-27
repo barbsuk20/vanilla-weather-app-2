@@ -1,6 +1,7 @@
+let celsius = 0;
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#current-temp");
-  let temperature = response.data.temperature.current;
+  let temperature = Math.round(response.data.temperature.current);
   let cityName = document.querySelector("#city");
   let country = document.querySelector("#country");
   let humidityElement = document.querySelector("#humidity");
@@ -8,12 +9,13 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
   let icon = document.querySelector("#weather-icon");
+  celsius = temperature;
 
   cityName.innerHTML = response.data.city;
   country.innerHTML = response.data.country;
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  temperatureElement.innerHTML = Math.round(temperature);
+  temperatureElement.innerHTML = temperature;
   timeElement.innerHTML = formatDate(date);
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
   getForecast(response.data.city);
@@ -98,5 +100,22 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+
+function changeTemp() {
+  let tempCel = document.querySelector("#current-temp");
+  tempCel.innerHTML = celsius;
+}
+
+function changeTempFahr() {
+  let tempFahr = document.querySelector("#current-temp");
+  let fahr = Math.round((celsius * 9) / 5 + 32);
+  tempFahr.innerHTML = fahr;
+}
+
+let changeCel = document.querySelector("#unit-celsius");
+changeCel.addEventListener("click", changeTemp);
+
+let changeFah = document.querySelector("#unit-fahr");
+changeFah.addEventListener("click", changeTempFahr);
 
 searchCity("London");
